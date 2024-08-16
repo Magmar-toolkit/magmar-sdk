@@ -1,0 +1,29 @@
+{
+  "name": "@magmar-toolkit/magmar-aa-sdk",
+  "version": "0.0.1",
+  "description": "Account abstraction (ERC-4337) SDK layer",
+  "source": "src/index.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.modern.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "microbundle watch",
+    "build": "microbundle",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@account-abstraction/contracts": "^0.6.0",
+    "@types/jest": "^29.5.5",
+    "dotenv": "^16.3.1",
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.2"
+  }
+}
