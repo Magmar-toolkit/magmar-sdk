@@ -1,6 +1,6 @@
 {
   "name": "@magmar-toolkit/magmar-aa-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Account abstraction (ERC-4337) SDK layer",
   "source": "src/index.ts",
   "main": "dist/index.umd.js",
