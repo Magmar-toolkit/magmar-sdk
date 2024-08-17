@@ -324,7 +324,7 @@ export class AATelegramClient {
 				verificationGasLimit: utils.hexlify(600_000) as `0x${string}`,
 				preVerificationGas: utils.hexlify(200_000) as `0x${string}`,
 				maxFeePerGas: maxFeePerGas?._hex as `0x${string}`,
-				maxPriorityFeePerGas: utils.hexlify(gasPrice) as `0x${string}`,
+				maxPriorityFeePerGas: priorityFeePerGas._hex  as `0x${string}`,
 				paymasterAndData: "0x",
 				signature: "0x",
 			};
@@ -417,7 +417,7 @@ export class AATelegramClient {
 				verificationGasLimit: utils.hexlify(600_000) as `0x${string}`,
 				preVerificationGas: utils.hexlify(200_000) as `0x${string}`,
 				maxFeePerGas: maxFeePerGas._hex as `0x${string}`,
-				maxPriorityFeePerGas: utils.hexlify(gasPrice) as `0x${string}`,
+				maxPriorityFeePerGas: priorityFeePerGas._hex  as `0x${string}`,
 				paymasterAndData: "0x",
 				signature: "0x",
 			};

@@ -372,7 +372,7 @@ export class AAClient {
 				verificationGasLimit: utils.hexlify(2_000_000) as `0x${string}`,
 				preVerificationGas: utils.hexlify(200_000) as `0x${string}`,
 				maxFeePerGas: maxFeePerGas?._hex as `0x${string}`,//utils.hexlify(currentBaseFee) as `0x${string}`,
-				maxPriorityFeePerGas: utils.hexlify(gasPrice) as `0x${string}`,
+				maxPriorityFeePerGas: priorityFeePerGas._hex as `0x${string}`,
 				paymasterAndData: "0x",
 				signature: dummySignature as `0x${string}`,
 			};
@@ -500,7 +500,7 @@ export class AAClient {
 				verificationGasLimit: utils.hexlify(600_000) as `0x${string}`,
 				preVerificationGas: utils.hexlify(200_000) as `0x${string}`,
 				maxFeePerGas: maxFeePerGas?._hex as `0x${string}`,
-				maxPriorityFeePerGas: utils.hexlify(gasPrice) as `0x${string}`,
+				maxPriorityFeePerGas: priorityFeePerGas._hex  as `0x${string}`,
 				paymasterAndData: "0x",
 				signature: dummySignature as `0x${string}`,
 			};
